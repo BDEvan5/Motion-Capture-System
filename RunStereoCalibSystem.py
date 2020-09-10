@@ -20,9 +20,9 @@ if __name__ == "__main__":
     # myCalib = Calibration.RunCalibration()
     # myCalib.run_calibration(Session_number, Calibration_number, size)
     #
-    # myTri = Triangulation.RunTriangulation()
-    # myTri.set_up_folder(Session_number, Stream_number, Calibration_number, size)
-    # myTri.run_through_videos() # runs through videos with static cameras
+    myTri = Triangulation.RunTriangulation()
+    myTri.set_up_folder(Session_number, Stream_number, Calibration_number, size)
+    myTri.run_through_videos() # runs through videos with static cameras
     # myTri.run_through_videos_dynamic()  # runs through videos with moving cameras
     # myTri.run_through_videos_marker_size()
 
@@ -46,12 +46,12 @@ if __name__ == "__main__":
     # myAnaD.set_path(Session_number, Stream_number)
     # myAnaD.plot_histogram()
 
-    for i in [3, 4, 5]:
-        myCalib = Calibration.CameraCalibrationData()
-        session_path = 'StaticServerSession%d/' % 7
-        calibration_data_path = session_path + "staticCalibrationData%d/" % i
-        myCalib.set_parameters(calibration_data_path)
-        print(myCalib.projRgt)
+    # for i in [3, 4, 5]:
+    #     myCalib = Calibration.CameraCalibrationData()
+    #     session_path = 'StaticServerSession%d/' % 7
+    #     calibration_data_path = session_path + "staticCalibrationData%d/" % i
+    #     myCalib.set_parameters(calibration_data_path)
+    #     print(myCalib.projRgt)
 
 
 
